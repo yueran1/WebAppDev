@@ -1,0 +1,52 @@
+/********Whole body part********************/
+.main-body{margin: 20px 280px;}
+
+
+/****************YueRan hope header part*************/
+
+header.clearfix{overflow:auto;width:100%; border-bottom: 2px solid grey; padding-bottom: 30px;}
+.main-title{float: left; }
+
+/*nav part*/
+.nav-div{float: right;}
+.nav-div ul a{
+    text-decoration: none;
+}
+
+.nav-div ul li{
+    list-style-type: none;
+    float: left;
+    padding-right: 7px;
+    padding-left: 5px;
+    border-right: 2px solid grey;
+}
+
+/****************Body part***********************/
+.main.clearfix{overflow: auto; border-bottom: 2px solid grey; padding-top: 15px; padding-bottom: 30px;}
+.left-part{width: 70%; float: left;}
+.right-part{right:30%; float: right;}
+.right-part img{width: 389px; height: 350px;}
+
+
+/*********Footer part*************************/
+.contactus{width:30%; float: left; }
+.sitemap{width:30%;float: right; }
+.sitemap ul a{text-decoration: none;}
+.sitemap ul li{list-style-type: none; padding: 0;}
+
+.sitemap ul{
+    -moz-column-count: 2;
+    -moz-column-gap: 5px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 5px;
+    column-count: 2;
+    column-gap: 0em;
+   
+    padding: 0;
+    margin:0;
+    width: 230px;
+
+    
+}
+
+
