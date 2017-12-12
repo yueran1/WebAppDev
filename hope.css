@@ -1,5 +1,6 @@
 /********Whole body part********************/
-.main-body{margin: 20px 280px;}
+html, body{height: 100%; margin: 0px; background-color: rgb(204, 198, 198);}
+.main-body{overflow: auto; margin: 0px 280px 0px 100px; background-color: white; height: 100%;padding:0px 30px 0px 30px;box-shadow: 5px 5px  rgb(128, 128, 128); }
 
 
 /****************YueRan hope header part*************/
@@ -22,13 +23,16 @@ header.clearfix{overflow:auto;width:100%; border-bottom: 2px solid grey; padding
 }
 
 /****************Body part***********************/
-.main.clearfix{overflow: auto; border-bottom: 2px solid grey; padding-top: 15px; padding-bottom: 30px;}
+.main.clearfix{overflow: auto;  padding-top: 15px; padding-bottom: 30px;}
 .left-part{width: 70%; float: left;}
 .right-part{right:30%; float: right;}
 .right-part img{width: 389px; height: 350px;}
 
 
 /*********Footer part*************************/
+footer{border-top: 2px solid grey; overflow: auto; position: relative; bottom:0;  padding-top: 20px;background-color: yellow; margin: 0px 280px 0px 100px; padding:0px 30px 0px 30px; box-shadow: 5px 5px  rgb(128, 128, 128);}
+.footer-div{overflow: auto;  padding-left:20px; padding-right: 10px;}
+
 .contactus{width:30%; float: left; }
 .sitemap{width:30%;float: right; }
 .sitemap ul a{text-decoration: none;}
