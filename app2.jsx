@@ -18,7 +18,7 @@ var main=function(){
             //so we dont need to keep recreating it
             var $element = $(element);
             //This is the way to define content
-            var $content;
+            var $content, $input, $button;
             $(".tabs a span").removeClass("active");
             $element.addClass("active");
             $("main .content").empty();
@@ -33,6 +33,16 @@ var main=function(){
                 $(".container .content").append($content);
             } else if($element.parent().is(":nth-child(3)")){
                 console.log("THIRD TAB CLICKED!");
+            } else if($element.parent().is(":nth-child(4)")){
+                $input=$("<input>");
+                $button =$("<button>").text("+");
+
+                $button.on("click", function(){
+                    toDos.push($input.val());
+                    $input.val("");
+                });
+                $content= $("<div>").append($input).append($button);
+                $(".content").append($content);
             }
 
             return false;
@@ -40,4 +50,8 @@ var main=function(){
     });
 };
 
-$(document).ready(main);
+$(document).ready(function () {
+    $.getJSON("todos.json", function (toDoObjects){
+        main(toDoObjects);
+    });
+});
